@@ -1,42 +1,75 @@
 * {
     margin: 0;
+    font-family: cursive;
 }
 h1 {
+    background-color: #5fa199;
     background-image: url(../design1_image1.jpg);
-    background-size: cover;
-    padding: 0 10px 150px;
+    background-position: center -20px;
+    background-repeat: no-repeat;
+    background-size: 70% 120%;
+    padding: 0 10px 250px;
     font-size: 60px;
+    color: gold;
+    -webkit-text-stroke: 2px red;
 }
 
 .logo {
     width: 150px;
     position: absolute;
-    left: 1000px;
-    top: 160px;
-    border: 1px solid black;
+    left: 75%;
+    top: 282px;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    z-index: 1;
 }
 
-.leyendaEvents {
+.leyendaHeader {
     text-align: center;
     background-color: black;
     color: white;
-    padding: 5px;
+    padding: 5px 0;
+    position: absolute;
+    left: 0;
+    top: 334px;
+    width: 100%;
 }
 
 .barraNav {
     display: inline-block;
+    margin-top: 10px;
 }
 
 main {
     display: inline-block;
-    margin-left: 30px;
+    margin-top: 90px;
+    margin-left: 130px;
+    vertical-align: top;
+    width: 60%;
 }
 
 .links {
     display: block;
-    margin: 50px 0 50px 30px;
+    margin: 80px 0 0 60px;
 }
 
-.imagen1 {
+.seccionAbout {
+    margin-bottom: 35px;
+}
+
+.articulo {
+    margin-bottom: 50px;
+}
+
+/* Para hacer una pequeña sangría (párrafo de art. en el index) */
+.parrafoArticulo {
+    margin-left: 30px;
+}
+
+main>p {
+    margin-bottom: 20px;
+}
+
+.imagen1, .imagen2, .imagen3 {
     display: none;
 }
