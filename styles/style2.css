@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    font-family: cursive;
+}
+
+header {
+    background-image: url(../design1_image2.jpg);
+    margin-top: 107px;
+    padding: 180px 0;
+    background-position: center -20px;
+    background-size: 100% 120%;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 70px;
+    color: gold;
+    -webkit-text-stroke: 2px red;
+}
+
+.logo {
+    width: 150px;
+    position: absolute;
+    left: 80px;
+    top: 545px;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.leyendaHeader {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    position: absolute;
+    left: 0;
+    top: 422px;
+    width: 100%;
+}
+
+.barraNav {
+    position: absolute;
+    top: 85px;
+    right: 3%;
+    margin-top: 10px;
+}
+
+main {
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 350px;
+    vertical-align: top;
+    width: 60%;
+}
+
+.links {
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: #3059a5;
+    color: white;
+    margin: 3px;
+    padding: 5px 10px;
+    box-shadow: 3px 3px black;
+}
+
+.links:active {
+    background-color: rgb(63, 131, 45);
+}
+
+.links:focus {
+    background-color: rgb(63, 131, 45);
+}
+
+.seccionAbout {
+    margin-bottom: 35px;
+}
+
+.articulo {
+    margin-bottom: 50px;
+}
+
+.parrafoSangria {
+    text-indent: 30px;
+}
+
+main>p {
+    margin-bottom: 20px;
+}
+
+.imagen1, .imagen2, .imagen3 {
+    display: none;
+}
