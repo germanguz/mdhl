@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    background-image: url(/design1_image2.jpg);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: 40px 615px;
+    background-color: #c8c6c6;
+}
+
+body {
+    background-image: url(/design1_image1.jpg);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: 40px 340px;
+    height: 780px;
+}
+
+header {
+    background-color: #211915;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    font-size: 60px;
+    color: #f8e12e;
+    -webkit-text-stroke: 2px red;
+}
+
+.logo {
+    width: 200px;
+    margin: 20px;
+    transition: .5s;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.leyendaHeader {
+    text-align: center;
+    font-size: 30px;
+    color: #211915;
+    padding: 5px 0;
+    position: absolute;
+    left: 35%;
+    top: 248px;
+    width: 30%;
+}
+
+.barraNav {
+    background: linear-gradient(#211915, #5fa199 25%);
+    padding: 10px 0 5px 10px;
+    border-bottom: 1px solid black;
+}
+
+main {
+    margin-top: 40px;
+    margin-left: 450px;
+    vertical-align: top;
+    width: 60%;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 25px;
+    color: azure;
+}
+
+.links:hover {
+    text-decoration: 2px underline crimson;
+    color: #f8e12e;
+}
+
+.seccionAbout {
+    margin-bottom: 35px;
+}
+
+.articulo {
+    margin-bottom: 50px;
+}
+
+h2, h3 {
+    text-indent: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+
+main>p {
+    margin-bottom: 20px;
+}
+
+.imagen1, .imagen2, .imagen3 {
+    display: none;
+}
