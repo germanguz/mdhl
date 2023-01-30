@@ -4,7 +4,7 @@
 }
 h1 {
     background-color: #5fa199;
-    background-image: url(../design1_image1.jpg);
+    background-image: url(/images/design1_image1.jpg);
     background-position: center -20px;
     background-repeat: no-repeat;
     background-size: 70% 120%;
