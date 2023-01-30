@@ -67,11 +67,7 @@ main {
     box-shadow: 3px 3px black;
 }
 
-.links:active {
-    background-color: rgb(63, 131, 45);
-}
-
-.links:focus {
+.verde {
     background-color: rgb(63, 131, 45);
 }
 
