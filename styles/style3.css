@@ -106,3 +106,7 @@ main>p {
 .imagen1, .imagen2, .imagen3 {
     display: none;
 }
+
+td {
+    padding: 0 20px;
+}
