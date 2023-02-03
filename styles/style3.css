@@ -4,19 +4,7 @@
 }
 
 html {
-    background-image: url(/images/design1_image2.jpg);
-    background-size: 350px;
-    background-repeat: no-repeat;
-    background-position: 40px 615px;
     background-color: #c8c6c6;
-}
-
-body {
-    background-image: url(/images/design1_image1.jpg);
-    background-size: 350px;
-    background-repeat: no-repeat;
-    background-position: 40px 340px;
-    height: 780px;
 }
 
 header {
@@ -43,34 +31,24 @@ h1 {
 }
 
 .leyendaHeader {
-    text-align: center;
     font-size: 30px;
     color: #211915;
-    padding: 5px 0;
+    padding-top: 3px;
     position: absolute;
-    left: 35%;
-    top: 248px;
-    width: 30%;
+    left: 45%;
 }
 
 .barraNav {
     background: linear-gradient(#211915, #5fa199 25%);
     padding: 10px 0 5px 10px;
     border-bottom: 1px solid black;
-}
-
-main {
-    margin-top: 40px;
-    margin-left: 450px;
-    vertical-align: top;
-    width: 60%;
+    display: flex;
 }
 
 .links {
     text-decoration: none;
     font-size: 20px;
-    border-radius: 5px;
-    margin-left: 25px;
+    margin-left: 20px;
     color: azure;
 }
 
@@ -79,34 +57,122 @@ main {
     color: #f8e12e;
 }
 
-.seccionAbout {
-    margin-bottom: 35px;
+main {
+    margin-top: 40px;
+    margin-left: 50px;
+    vertical-align: top;
+    width: 85%;
 }
 
-.articulo {
+.main-flex {
+    display: flex;
+}
+
+.image-flex {
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.imagen1, .imagen2 {
+    width: 350px;
+    border-radius: 20px;
+}
+
+.div-flex {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+
+.div-flex-about {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 100px;
     margin-bottom: 50px;
 }
 
-h2, h3 {
+.div-flex-rules {
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.div-flex-game_info {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.div-contact {
+    margin-left: 100px;
+}
+
+.div-contact>p {
+    margin-bottom: 20px;
+}
+
+.identacion {
     text-indent: 30px;
 }
 
 h3 {
-    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 p {
     font-size: 20px;
 }
 
-main>p {
-    margin-bottom: 20px;
-}
-
-.imagen1, .imagen2, .imagen3 {
-    display: none;
+.styleCircle-rules {
+    list-style-type: circle;
+    padding-left: 40px;
 }
 
 td {
-    padding: 0 20px;
+    padding: 0 10px;
+}
+
+.contacto-game_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    font-weight: bold;
+}
+
+.olConLetra {
+    list-style-type: lower-latin;
+}
+
+table {
+    border-radius: 10px;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+ol, ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.margenLista-rules {
+    margin-bottom: 15px;
+}
+
+li {
+    font-size: 20px;
 }
