@@ -5,6 +5,7 @@
 
 html {
     background-color: #c8c6c6;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -35,7 +36,7 @@ h1 {
     color: #211915;
     padding-top: 3px;
     position: absolute;
-    left: 45%;
+    left: 47%;
 }
 
 .barraNav {
@@ -57,17 +58,6 @@ h1 {
     color: #f8e12e;
 }
 
-main {
-    margin-top: 40px;
-    margin-left: 50px;
-    vertical-align: top;
-    width: 85%;
-}
-
-.main-flex {
-    display: flex;
-}
-
 .image-flex {
     height: 425px;
     display: flex;
@@ -81,68 +71,46 @@ main {
     box-shadow: 5px 5px 20px;
 }
 
+.fijarImagenes {
+    position: sticky;
+    top: 150px;
+}
+
+/* ===  === */
+.main-flex {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-game_info {
+    flex-wrap: wrap;
+}
+
+/* === div's con flex === */
 .div-flex {
-    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 100px;
+    
+    width: 60%;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 50px;
 }
 
-.div-flex-about {
+.div-flex-index {
+    height: 300px;
+    margin-bottom: 150px;
+}
+
+.div-flex-about  {
     height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-bottom: 50px;
-}
-
-.div-flex-rules {
-    height: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-bottom: 50px;
 }
 
 .div-flex-game_info {
     height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-bottom: 50px;
-}
-
-.div-contact {
-    margin-left: 100px;
-}
-
-.div-contact>p {
-    margin-bottom: 20px;
-}
-
-.identacion {
-    text-indent: 30px;
-}
-
-h3 {
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 20px;
-}
-
-.styleCircle-rules {
-    list-style-type: circle;
-    padding-left: 40px;
-}
-
-td {
-    padding: 0 10px;
 }
 
 .contacto-game_info {
@@ -150,14 +118,68 @@ td {
     justify-content: space-between;
 }
 
-span {
-    font-weight: bold;
+.div-flex-rules {
+    height: 1100px;
 }
 
+.div-flex-reg {
+    height: 1050px;
+}
+
+.div-flex-contact {
+    justify-content: flex-start;
+    height: 450px;
+}
+
+.div-flex-contact>p {
+    margin-bottom: 20px;
+}
+/* =============================== */
+
+.identacion {
+    text-indent: 30px;
+}
+
+.centrarH2 {
+    text-align: center;
+}
+
+.bottomH3 {
+    margin-bottom: 20px;
+}
+
+p, label {
+    font-size: 20px;
+}
+
+/* === listas === */
 .olConLetra {
     list-style-type: lower-latin;
 }
 
+ol, ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+li {
+    font-size: 20px;
+}
+
+.margenLista-rules {
+    margin-bottom: 15px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.styleCircle-rules {
+    list-style-type: circle;
+    padding-left: 40px;
+}
+
+/* === tablas === */
 table {
     border-radius: 10px;
 }
@@ -166,20 +188,29 @@ table, td, th {
     border: 1px solid black;
 }
 
-ol, ul {
-    list-style-position: inside;
-    padding-left: 0;
+td {
+    padding: 0 10px;
 }
 
-.margenLista-rules {
-    margin-bottom: 15px;
+/* === mapa === */
+.mapa {
+    margin: 50px 10px 10px;
 }
 
-li {
-    font-size: 20px;
+.linkMap {
+    text-decoration: none;
+    color: black;
 }
 
-.fijarImagenes {
-    position: sticky;
-    top: 150px;
+.linkMap:hover {
+    color: #5fa199;
 }
+
+iframe {
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px;
+}
+/* iframe:hover {
+    box-shadow: 5px 5px 20px #5fa199;
+    transform: scale(1.02);
+} */
