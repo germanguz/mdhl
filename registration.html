@@ -35,108 +35,146 @@
             <h2 class="centrarH2">Registration Form</h2>
             <article>
                 <form action="/show_data.html" method="get">
-                    <fieldset>
+                    <fieldset class="flex-form-reg">
 
-                        <label for="fname">Player’s First Name:</label>
-                        <input type="text" name="first_name" id="fname">
+                        <div class="marginInput-reg">
+                            <label for="fname">Player’s First Name:</label>
+                            <input class="widthInput" type="text" name="first_name" id="fname">
+                        </div>
 
-                        <label for="lname">Last Name:</label>
-                        <input type="text" name="last_name" id="lname">
+                        <div class="marginInput-reg">
+                            <label for="lname">Last Name:</label>
+                            <input class="widthInput" type="text" name="last_name" id="lname">
+                        </div>
 
-                        <label for="addressId">Street Address:</label>
-                        <input type="text" name="address" id="addressId">
+                        <div class="marginInput-reg widthAddrees">
+                            <label for="addressId">Street Address:</label>
+                            <input class="addressForm" type="text" name="address" id="addressId">
+                        </div>
 
-                        <label for="cityId">City:</label>
-                        <input type="text" name="city" id="cityId">
+                        <div class="marginInput-reg">
+                            <label for="cityId">City:</label>
+                            <input type="text" name="city" id="cityId">
+                        </div>
 
-                        <label for="zipId">Zip Code:</label>
-                        <input type="text" name="zip_code" id="zipId">
+                        <div class="marginInput-reg marginRigth-reg">
+                            <label for="zipId">Zip Code:</label>
+                            <input type="text" name="zip_code" id="zipId">
+                        </div>
 
-                        <label for="birthId">Birth Date(mm/dd/yyyy):</label>
-                        <input type="date" name="birth" id="birthId">
+                        <div class="marginInput-reg">
+                            <label for="birthId">Birth Date(dd/mm/yyyy):</label>
+                            <input type="date" name="birth" id="birthId">
+                        </div>
 
-                        <label for="genderFemId">Gender: Female</label>
-                        <input type="radio" name="gender" id="genderFemId" value="female">
-                        <label for="genderMalId">Male</label>
-                        <input type="radio" name="gender" id="genderMalId" value="male">
+                        <div class="marginInput-reg marginRigth-reg">
+                            <label>Gender:</label>
+                            <label for="genderFemId">Female</label>
+                            <input type="radio" name="gender" id="genderFemId" value="female">
+                            <label for="genderMalId">Male</label>
+                            <input type="radio" name="gender" id="genderMalId" value="male">
+                        </div>
 
-                        <label>Grade:</label>
+                        <div class="marginInput-reg">
+                            <label>Grade:</label>
 
-                        <input type="radio" name="grade" id="preId" value="preSchool">
-                        <label for="preId">Pre-School</label>
+                            <input type="radio" name="grade" id="preId" value="preSchool">
+                            <label for="preId">Pre-School</label>
 
-                        <input type="radio" name="grade" id="firstId" value="first">
-                        <label for="firstId"><sup>1st</sup></label>
+                            <input type="radio" name="grade" id="firstId" value="first">
+                            <label for="firstId"><sup>1st</sup></label>
 
-                        <input type="radio" name="grade" id="secondId" value="second">
-                        <label for="secondId"><sup>2nd</sup></label>
+                            <input type="radio" name="grade" id="secondId" value="second">
+                            <label for="secondId"><sup>2nd</sup></label>
 
-                        <input type="radio" name="grade" id="thirdId" value="third">
-                        <label for="thirdId"><sup>3rd</sup></label>
+                            <input type="radio" name="grade" id="thirdId" value="third">
+                            <label for="thirdId"><sup>3rd</sup></label>
 
-                        <input type="radio" name="grade" id="fourthId" value="fourth">
-                        <label for="fourthId"><sup>4th</sup></label>
+                            <input type="radio" name="grade" id="fourthId" value="fourth">
+                            <label for="fourthId"><sup>4th</sup></label>
 
-                        <input type="radio" name="grade" id="fifthId" value="fifth">
-                        <label for="fifthId"><sup>5th</sup></label>
+                            <input type="radio" name="grade" id="fifthId" value="fifth">
+                            <label for="fifthId"><sup>5th</sup></label>
+                        </div>
 
-                        <label for="parentId">Parent/Guardian</label>
-                        <input type="text" name="parent" id="parentId">
+                        <div class="marginInput-reg marginRigth-reg">
+                            <label for="parentId">Parent/Guardian</label>
+                            <input class="widthInput" type="text" name="parent" id="parentId">
+                        </div>
 
                     </fieldset>
                     <fieldset>
 
                         <h3 class="bottomH3">Which elementary school do you live near?</h3>
-                        <h4>CLosest school</h4>
 
-                        <select name="school" id="schoolId" multiple size="6" style="overflow: auto;">
-                            <option value="ajKatzenmaier">AJ Katzenmaier</option>
-                            <option value="marjorie">Marjorie P Hart</option>
-                            <option value="greenbay">Greenbay</option>
-                            <option value="northId">North Elementary</option>
-                            <option value="howard">Howard A Yeager</option>
-                            <option value="south">South Elementary</option>
-                        </select>
+                        <div class="div-school-reg">
+                            <h4>Closest school</h4>
+
+                            <select name="school" id="schoolId" multiple size="6">
+                                <option value="ajKatzenmaier">AJ Katzenmaier</option>
+                                <option value="marjorie">Marjorie P Hart</option>
+                                <option value="greenbay">Greenbay</option>
+                                <option value="northId">North Elementary</option>
+                                <option value="howard">Howard A Yeager</option>
+                                <option value="south">South Elementary</option>
+                            </select>
+                        </div>
 
                     </fieldset>
                     <fieldset>
                         <h3 class="bottomH3">What position(s) do you normally play? (check all that apply)</h3>
 
-                        <input type="checkbox" name="position" id="forId" value="forward">
-                        <label for="forId">Forward</label>
+                        <div class="flex-posPlay-reg">
+                            <label class="width-PosPlay-reg">
+                                <input type="checkbox" name="position" id="forId" value="forward">
+                                Forward</label>
 
-                        <input type="checkbox" name="position" id="midId" value="midfield">
-                        <label for="midId">Mildfield</label>
+                            <label class="width-PosPlay-reg">
+                                <input type="checkbox" name="position" id="midId" value="midfield">
+                                Mildfield</label>
 
-                        <input type="checkbox" name="position" id="defId" value="defense">
-                        <label for="defId">Defense</label>
+                            <label class="width-PosPlay-reg">
+                                <input type="checkbox" name="position" id="defId" value="defense">
+                                Defense</label>
 
-                        <input type="checkbox" name="position" id="goalId" value="goalkeeper">
-                        <label for="goalId">Goalkeeper</label>
+                            <label class="width-PosPlay-reg">
+                                <input type="checkbox" name="position" id="goalId" value="goalkeeper">
+                                Goalkeeper</label>
+                        </div>
+
                     </fieldset>
                     <fieldset>
                         <h3 class="bottomH3">Uniform Size</h3>
 
-                        <input type="radio" name="uniform" id="ysId" value="youthSmall">
-                        <label for="ysId">Youth Small</label>
+                        <div class="flex-posPlay-reg">
+                            <label class="width-PosPlay-reg">
+                                <input type="radio" name="uniform" id="ysId" value="youthSmall">
+                                Youth Small</label>
 
-                        <input type="radio" name="uniform" id="mId" value="medium">
-                        <label for="mId">Medium</label>
+                            <label class="width-PosPlay-reg">
+                                <input type="radio" name="uniform" id="mId" value="medium">
+                                Medium</label>
 
-                        <input type="radio" name="uniform" id="ymId" value="youthMedium">
-                        <label for="ymId">Youth Medium</label>
+                            <label class="width-PosPlay-reg">
+                                <input type="radio" name="uniform" id="ymId" value="youthMedium">
+                                Youth Medium</label>
 
-                        <input type="radio" name="uniform" id="lId" value="large">
-                        <label for="lId">Large</label>
+                            <label class="width-PosPlay-reg">
+                                <input type="radio" name="uniform" id="lId" value="large">
+                                Large</label>
 
-                        <input type="radio" name="uniform" id="ylId" value="youthLarge">
-                        <label for="ylId">Youth Large</label>
+                            <label class="width-PosPlay-reg">
+                                <input type="radio" name="uniform" id="ylId" value="youthLarge">
+                                Youth Large</label>
 
-                        <input type="radio" name="uniform" id="elId" value="extraLarge">
-                        <label for="elId">Extra-Large</label>
+                            <label class="width-PosPlay-reg">
+                                <input type="radio" name="uniform" id="elId" value="extraLarge">
+                                Extra-Large</label>
 
-                        <input type="radio" name="uniform" id="sId" value="small">
-                        <label for="sId">Small</label>
+                            <label class="width-PosPlay-reg">
+                                <input type="radio" name="uniform" id="sId" value="small">
+                                Small</label>
+                        </div>
                     </fieldset>
                     <fieldset>
                         <h3 class="bottomH3">Permission to Play</h3>
@@ -151,13 +189,17 @@
                         <p>By entering your name below, I hereby agree and authorize the above. In addition, by entering
                             your name below, I also acknowledge that I have read the cancellation policy and agree to
                             its terms.</p>
-                        <label for="signId">Parent/Guardian signature:</label>
-                        <input type="text" name="sign" id="signId">
-                        <label for="dateId">Date:</label>
-                        <input type="date" name="date" id="dateId">
+
+                        <div class="flex-sign-reg">
+                            <label>Parent/Guardian signature:
+                                <input type="text" name="sign" id="signId"></label>
+
+                            <label>Date:
+                                <input type="date" name="date" id="dateId"></label>
+                        </div>
 
                     </fieldset>
-                    <input type="submit" value="Submit">
+                    <input class="submitStyle" type="submit" value="Submit">
                 </form>
             </article>
         </section>
