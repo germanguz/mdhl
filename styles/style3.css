@@ -42,7 +42,7 @@ h1 {
 .barraNav {
     background: linear-gradient(#211915, #5fa199 25%);
     padding: 10px 0 5px 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #211915;
     display: flex;
 }
 
@@ -68,7 +68,7 @@ h1 {
 .imagen1, .imagen2 {
     width: 350px;
     border-radius: 20px;
-    box-shadow: 5px 5px 20px;
+    box-shadow: 5px 5px 20px #211915;
 }
 
 .fijarImagenes {
@@ -119,11 +119,11 @@ h1 {
 }
 
 .div-flex-rules {
-    height: 1100px;
+    height: 1000px;
 }
 
 .div-flex-reg {
-    height: 1050px;
+    height: 1200px;
 }
 
 .div-flex-contact {
@@ -148,8 +148,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-p, label {
-    font-size: 20px;
+p, label, li {
+    font-size: 18px;
 }
 
 /* === listas === */
@@ -160,10 +160,6 @@ p, label {
 ol, ul {
     list-style-position: inside;
     padding-left: 0;
-}
-
-li {
-    font-size: 20px;
 }
 
 .margenLista-rules {
@@ -182,6 +178,7 @@ span {
 /* === tablas === */
 table {
     border-radius: 10px;
+    background-color: #bdc4bd;
 }
 
 table, td, th {
@@ -206,11 +203,92 @@ td {
     color: #5fa199;
 }
 
+.linkBack {
+    text-decoration: none;
+    color: gray;
+    font-size: small;
+}
+
 iframe {
     border-radius: 5px;
-    box-shadow: 5px 5px 20px;
+    box-shadow: 5px 5px 20px #211915;
 }
-/* iframe:hover {
-    box-shadow: 5px 5px 20px #5fa199;
-    transform: scale(1.02);
-} */
+iframe:hover {
+    box-shadow: 0 0 20px #5fa199;
+}
+
+/* === Form === */
+fieldset {
+    background-color: #bdc4bd;
+    border-radius: 10px;
+}
+.flex-form-reg {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.div-school-reg {
+    margin-left: 10%;
+}
+
+.addressForm {
+    width: 70%;
+    min-width: 170px;
+}
+
+.widthAddrees {
+    width: 90%;
+}
+
+.widthInput {
+    width: 170px;
+}
+
+.marginInput-reg {
+    margin: 4px 0;
+}
+
+.marginRigth-reg {
+    margin-right: 8%;
+}
+
+.flex-posPlay-reg {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.width-PosPlay-reg {
+    width: 145px;
+}
+
+select {
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.flex-sign-reg {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.submitStyle {
+    display: block;
+    margin: 5px auto;
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: #211915;
+    color: #5fa199;
+    border-radius: 5px;
+    border: none;
+    transition: 500ms;
+}
+.submitStyle:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: #00ffe1
+}
