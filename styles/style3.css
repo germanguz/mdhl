@@ -4,8 +4,14 @@
 }
 
 html {
-    background-color: #c8c6c6;
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: #c8c6c6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -76,11 +82,12 @@ h1 {
     top: 150px;
 }
 
-/* ===  === */
+/* === main === */
 .main-flex {
     margin-top: 40px;
     display: flex;
     justify-content: space-evenly;
+    flex-grow: 1;
 }
 
 .main-game_info {
@@ -292,3 +299,169 @@ select {
     cursor: pointer;
     color: #00ffe1
 }
+
+/* Footer */
+.footer {
+    height: 100px;
+    background: linear-gradient(#5fa199 32%, #211915 42%);
+    border-top: 1px solid #211915;
+    text-align: center;
+    color: azure;
+}
+
+.footer p {
+    padding-top: 55px;
+}
+
+/* !Responsividad */
+@media only screen and (max-width: 1440px) {
+    .leyendaHeader {
+        font-size: 25px;
+        top: 285px;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    h1 {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    h1 {
+        width: 365px;
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+}
+
+@media only screen and (max-width: 475px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        position: static;
+        font-size: 24px;
+        -webkit-text-stroke: 1px red;
+        margin-bottom: 5px;
+    }
+    
+    .logo {
+        margin: 0;
+    }
+    
+    .logo:hover {
+        transform: none;
+    }
+    
+    .leyendaHeader {
+        /* position: absolute; */
+        font-size: 20px;
+        top: 415px;
+        left: auto;
+        right: auto;
+    }
+
+    .barraNav {
+        flex-direction: column;
+    }
+
+    .main-flex {
+        flex-direction: column;
+    }
+
+    .imagen1, .imagen2 {
+        width: 320px;
+    }
+
+    .image-flex {
+        height: 390px;
+        align-items: center;
+    }
+    
+    .div-flex-index {
+        justify-content: space-evenly;
+        align-self: center;
+        width: 80%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .identacion {
+        text-indent: 0;
+    }
+}
+
+
+
+
+/* @media only screen and (max-width: 475px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        position: static;
+        font-size: 24px;
+        -webkit-text-stroke: 1px red;
+        margin-bottom: 5px;
+
+    }
+    
+    .logo {
+        margin: 0;
+    }
+    
+    .logo:hover {
+        transform: none;
+    }
+    
+    .leyendaHeader {
+        position: absolute;
+        font-size: 20px;
+        top: 415px;
+        left: auto;
+        right: auto;
+    }
+
+    .barraNav {
+        flex-direction: column;
+    }
+
+    .main-flex {
+        flex-direction: column;
+    }
+
+    .imagen1, .imagen2 {
+        width: 320px;
+    }
+
+    .image-flex {
+        height: 390px;
+        align-items: center;
+    }
+    
+    .div-flex-index {
+        justify-content: space-evenly;
+        align-self: center;
+        width: 80%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .identacion {
+        text-indent: 0;
+    }
+} */
