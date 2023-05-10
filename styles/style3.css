@@ -19,9 +19,11 @@ header {
 }
 
 h1 {
+    /* width: 100%; */
     position: absolute;
     top: 20px;
     left: 250px;
+    /* text-align: center; */
     font-size: 60px;
     color: #f8e12e;
     -webkit-text-stroke: 2px red;
@@ -92,6 +94,17 @@ h1 {
 
 .main-game_info {
     flex-wrap: wrap;
+}
+
+.main-show-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.title-show-data {
+    margin-bottom: 20px;
 }
 
 /* === div's con flex === */
